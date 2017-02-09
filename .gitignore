@@ -1,0 +1,6 @@
+http.log
+state.sqlite
+state.sqlite-shm
+state.sqlite-wal
+twistd.log
+workers/

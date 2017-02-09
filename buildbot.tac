@@ -1,10 +1,11 @@
 import sys
+import os
 
 from buildbot.master import BuildMaster
 from twisted.application import service
 from twisted.python.log import FileLogObserver, ILogObserver
 
-basedir = '/usr/src/app'
+basedir = os.path.abspath(os.path.dirname(__file__))
 configfile = 'master.cfg'
 
 # note: this line is matched against to check that this is a buildmaster
