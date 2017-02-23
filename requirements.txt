@@ -1,3 +1,4 @@
 buildbot[bundle]
 buildbot_travis
 psycopg2cffi-compat
+txGraylog
