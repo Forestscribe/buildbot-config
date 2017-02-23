@@ -21,7 +21,7 @@ if GELF_URL is not None:
     from txgraylog.observer import GraylogObserver
     from future.moves.urllib.parse import urlparse
     url = urlparse(GELF_URL)
-    host, port = host.netloc.split(":")
+    host, port = url.netloc.split(":")
     if url.scheme == "udp":
         observer = GraylogObserver(udp.UDPGelfProtocol, host, int(port))
     elif url.scheme == "tcp":
