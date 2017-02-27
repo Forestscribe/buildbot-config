@@ -1,5 +1,5 @@
 buildbot[bundle]
-buildbot_travis
+buildbot_travis >= 0.5.0
 psycopg2cffi-compat
 txGraylog
 service_identity
